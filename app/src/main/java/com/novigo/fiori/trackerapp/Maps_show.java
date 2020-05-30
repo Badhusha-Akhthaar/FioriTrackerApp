@@ -350,7 +350,7 @@ public class Maps_show extends FragmentActivity implements OnMapReadyCallback , 
 //        String poly_output = "json";
         //https://maps.googleapis.com/maps/api/directions/json?origin=12.9880,77.6895&destination=12.9177,77.6238&key=AIzaSyD-2zFWDriYqjqf5vtJa6kqilT6XqYGcQ0
 //        String url = "https://maps.googleapis.com/maps/api/directions/json?origin=sydney,au&destination=perth,au&waypoints=-37.81223%2C144.96254|-34.92788%2C138.60008&key=AIzaSyBxPzyNuKBwMxvINdh55kkAnhveYhMXWbA";
-          String url = "https://maps.googleapis.com/maps/api/directions/json?origin="+orgin_url+"&destination="+dest_url+"&waypoints="+waypoints_string+"&key=AIzaSyBxPzyNuKBwMxvINdh55kkAnhveYhMXWbA";
+          String url = "https://maps.googleapis.com/maps/api/directions/json?origin="+orgin_url+"&destination="+dest_url+"&waypoints="+waypoints_string+"&key=API_KEY";
         return url;
     }
     private double haversine(double lat1,double log1,double lat2,double log2){
