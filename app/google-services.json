@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "868798779981",
+    "firebase_url": "https://novigogeotracker.firebaseio.com",
+    "project_id": "novigogeotracker",
+    "storage_bucket": "novigogeotracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868798779981:android:9f7940196fedd916f34204",
+        "android_client_info": {
+          "package_name": "com.novigo.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868798779981-tuquv7sft4qt8h6610iier2iin1aqv83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.novigo.driverapp",
+            "certificate_hash": "59aa55bdcbca8e713e0363d4505ba8261c86910a"
+          }
+        },
+        {
+          "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcY5ATyZziZaqNnEk1oVbupnEzPyjp-fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868798779981:android:bccd2876e73841d0f34204",
+        "android_client_info": {
+          "package_name": "com.novigo.fiori.trackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868798779981-a5odo10gq8a4obblqvluqk66vnebnalp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.novigo.fiori.trackerapp",
+            "certificate_hash": "59aa55bdcbca8e713e0363d4505ba8261c86910a"
+          }
+        },
+        {
+          "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcY5ATyZziZaqNnEk1oVbupnEzPyjp-fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868798779981:android:31452ff41cf85387f34204",
+        "android_client_info": {
+          "package_name": "com.novigo.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868798779981-oqnjedllfnbohr37n8ipbkgjdr5r0c4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.novigo.tracker",
+            "certificate_hash": "59aa55bdcbca8e713e0363d4505ba8261c86910a"
+          }
+        },
+        {
+          "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcY5ATyZziZaqNnEk1oVbupnEzPyjp-fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868798779981-21j7ft4lass5svpa5fimpi7qlh4m78bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

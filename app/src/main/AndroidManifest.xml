@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.novigo.fiori.trackerapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+
+    <application
+        android:name=".app.SAPWizardApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".bottomsheet_novigo_maps"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Maps_with_bottomsheet"
+            android:label="@string/title_activity_maps_with_bottomsheet" />
+        <activity
+            android:name=".Maps_show"
+            android:label="@string/title_activity_maps_show" />
+        <activity android:name=".FioriMapView" />
+        <activity android:name=".datefilter" />
+        <activity android:name=".RecyclerMain" />
+        <activity android:name=".choose_view" />
+        <activity
+            android:name=".logon.LogonActivity"
+            android:label="@string/application_name"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mdui.EntitySetListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.launchscreen.LaunchScreenActivity"
+            android:label="@string/application_name">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.LaunchScreenActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name=".mdui.customers.CustomersActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.productcategories.ProductCategoriesActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.producttexts.ProductTextsActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.products.ProductsActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.purchaseorderheaders.PurchaseOrderHeadersActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.purchaseorderitems.PurchaseOrderItemsActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.salesorderheaders.SalesOrderHeadersActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.salesorderitems.SalesOrderItemsActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.stock.StockActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.suppliers.SuppliersActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/settings_activity_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.SetPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.ConfirmPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.EnterPasscodeActivity"
+            android:label="@string/application_name"
+            android:parentActivityName=".logon.LogonActivity">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeValidationActionHandler" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.fingerprint.FingerprintActivity"
+            android:label="@string/application_name">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.FingerprintActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.fingerprint.FingerprintErrorActivity"
+            android:label="@string/application_name">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.FingerprintActionHandlerImpl" />
+        </activity>
+        <activity android:name=".logon.UnlockActivity" />
+        <activity
+            android:name="com.sap.cloud.mobile.onboarding.passcode.ChangePasscodeActivity"
+            android:label="@string/application_name">
+            <meta-data
+                android:name="action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeActionHandlerImpl" />
+            <meta-data
+                android:name="validation_action_handler"
+                android:value="com.novigo.fiori.trackerapp.logon.PasscodeValidationActionHandlerImpl" />
+        </activity>
+        <activity
+            android:name=".app.ErrorNotificationDialog"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".app.ResetApplicationActivity"
+            android:theme="@style/AppTheme.Transparent" />
+
+        <meta-data
+            android:name="android.content.APP_RESTRICTIONS"
+            android:resource="@xml/app_restrictions" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
